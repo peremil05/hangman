@@ -4,10 +4,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hangman</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="widescreen.css"/>
   </head>
   <body>
-    <p id="text">Placeholder text</p>
+    <div id="wordArea"><p id="text">Placeholder text</p></div>
+    <div id="keyboardArea">
+      <div id="keyboard">
+        <div id="rowOne" class="keyRows">
+          <button id="q" class="keys" onclick="handleVirtualKeyboardInput(this)">Q</button>
+          <button id="w" class="keys" onclick="handleVirtualKeyboardInput(this)">W</button>
+          <button id="e" class="keys" onclick="handleVirtualKeyboardInput(this)">E</button>
+          <button id="r" class="keys" onclick="handleVirtualKeyboardInput(this)">R</button>
+          <button id="t" class="keys" onclick="handleVirtualKeyboardInput(this)">T</button>
+          <button id="y" class="keys" onclick="handleVirtualKeyboardInput(this)">Y</button>
+          <button id="u" class="keys" onclick="handleVirtualKeyboardInput(this)">U</button>
+          <button id="i" class="keys" onclick="handleVirtualKeyboardInput(this)">I</button>
+          <button id="o" class="keys" onclick="handleVirtualKeyboardInput(this)">O</button>
+        </div>
+        <div id="rowTwo" class="keyRows">
+          <button id="a" class="keys" onclick="handleVirtualKeyboardInput(this)">A</button>
+          <button id="s" class="keys" onclick="handleVirtualKeyboardInput(this)">S</button>
+          <button id="d" class="keys" onclick="handleVirtualKeyboardInput(this)">D</button>
+          <button id="f" class="keys" onclick="handleVirtualKeyboardInput(this)">F</button>
+          <button id="g" class="keys" onclick="handleVirtualKeyboardInput(this)">G</button>
+          <button id="h" class="keys" onclick="handleVirtualKeyboardInput(this)">H</button>
+          <button id="j" class="keys" onclick="handleVirtualKeyboardInput(this)">J</button>
+          <button id="k" class="keys" onclick="handleVirtualKeyboardInput(this)">K</button>
+          <button id="l" class="keys" onclick="handleVirtualKeyboardInput(this)">L</button>
+        </div>
+        <div id="rowThree" class="keyRows">
+          <button id="z" class="keys" onclick="handleVirtualKeyboardInput(this)">Z</button>
+          <button id="x" class="keys" onclick="handleVirtualKeyboardInput(this)">X</button>
+          <button id="c" class="keys" onclick="handleVirtualKeyboardInput(this)">C</button>
+          <button id="v" class="keys" onclick="handleVirtualKeyboardInput(this)">V</button>
+          <button id="b" class="keys" onclick="handleVirtualKeyboardInput(this)">B</button>
+          <button id="n" class="keys" onclick="handleVirtualKeyboardInput(this)">N</button>
+          <button id="m" class="keys" onclick="handleVirtualKeyboardInput(this)">M</button>
+          <button id="p" class="keys" onclick="handleVirtualKeyboardInput(this)">P</button>
+        </div>
+      </div>
+    </div>
+    <div id="manArea"></div>
     <script src="index.js"></script>
   </body>
 </html>
