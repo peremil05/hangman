@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.keys {
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    border: rgb(175, 175, 175) outset 3px;
+    border-radius: 5px;
+    transition: width 0.5s, height 0.5s;
+}
+
+.keys:hover {
+    width: 55px;
+    height: 55px;
+}
+
+#text {
+    display: table-cell;
+    vertical-align: middle;
+
+    font-size: 3rem;
+    text-align: center;
+}
+
+#wordArea {
+    display: table;
+    width: 50%;
+    height: 50%;
+
+    border: black solid 1px;
+    box-sizing: border-box;
+}
+
+#keyboardArea {
+    position: absolute;
+    top: 50%;
+
+    width: 50%;
+    height: 50%;
+
+    border: black solid 1px;
+    box-sizing: border-box;
+
+    display: flex;
+        
+    align-items: center;
+        
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    #keyboardArea {
+        display: none;
+    }
+}
+
+#manArea {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 50%;
+    height: 100%;
+
+    border: black solid 1px;
+    box-sizing: border-box;
+}
